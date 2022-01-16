@@ -43,11 +43,7 @@ The application include tests that can be executed using pytest. If you are inst
 
 The code has a modular structure that will work so far you keep the Final_Code folder as a unit, and don't change its internal structure.
 
-![Figure 1](images/modular_compressed.jpg "Figure 1: compressed modular structure of Loan Qualifier application")
 
-A detailed modular structure of the folders are as in Figure below.
-
-![Figure](images/modular_expanded.jpg "Figure: Expanded Modular Structure of the Loan Qualifier Application")
 
 ---
 
@@ -75,11 +71,11 @@ Once you run the program, the application will make several questions about the 
 
 > It will start by asking for the input data, which must be in a csv (comma separated) file, with a set of financial decision variables. You should provide a path (absolute or relative) to a .csv file. As an example, the application includes a template with real data in the appropiate format in `data/daily_rate_sheet.csv` directory to ilustrate the functionality.
 
-![Figure](images/input_path.jpg "Figure: App Starts Asking for a .csv File Path with Lenders Data.")
+![Figure](https://github.com/biggleem/uncc-fintech-modules/blob/main/fintech-module-2a/images/ask%201.png "Figure: App Starts Asking for a .csv File Path with Lenders Data.")
 
 After the application recognize the csv file, it will make several questions about the user financial situation, as ilustrated below.
 
-![Figure](images/single_variable_inputs.jpg "Figure: App Continues Asking for Financial Situation and Loan Characteristics.")
+![Figure](https://github.com/biggleem/uncc-fintech-modules/blob/main/fintech-module-2a/images/ask%202.png "Figure: App Continues Asking for Financial Situation and Loan Characteristics.")
 
 Once all the questions have been responded, the application will perform some calculations, and will filter all the lenders that would approve the loan based on the information in the csv input file provided `data/daily_rate_sheet.csv`, and the responses of the user. The application will determine the number of lenders for which the user loan would qualify. When there is at least one lender for which the user qualifies, the application will ask how to output the results. Otherwise, will exit.
 
@@ -90,11 +86,11 @@ The user will have 3 options for output:
 
 > 3. The option to exit without any output
 
-![Figure](images/output_prompt.jpg "Figure: App Giving Options of Outputs.")
+![Figure](https://github.com/biggleem/uncc-fintech-modules/blob/main/fintech-module-2a/images/results.png "Figure: App Giving Options of Outputs.")
 
 The application will export results to a csv file path provided by the user. If the path exists, it will overwrite the file; and if it doesn't exist, it will create it. In the next imagine, you can see the example of a request to provide the output to a new path. 
 
-![Figure](images/csv_file_output.jpg "Figure: App Creating A New CSV File with Lenders that Would Approve the Loan.")
+![Figure](https://github.com/biggleem/uncc-fintech-modules/blob/main/fintech-module-2a/images/results2.png "Figure: App Creating A New CSV File with Lenders that Would Approve the Loan.")
 
 Once the output is created, the application exits.
 
